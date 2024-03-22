@@ -1,0 +1,32 @@
+// replace character
+#include <stdio.h>
+
+int main() 
+{
+    char x[100];
+    char a;
+    char b;
+    int i=0,j;
+    
+    printf("Enter a string : ");
+    scanf("%s",x);
+    printf("Enterd string is : %s\n",x);
+    
+    printf("enter a charcter 1 :");
+    scanf(" %c",&a);
+    printf("Entered char 1 is : %c\n",a);
+    
+    printf("enter a charcter 2 :");
+    scanf(" %c",&b);
+    printf("Entered char 2 is : %c\n",b);
+
+    for(i=0;x[i];i++)
+    {
+        if(x[i]==a)
+        {
+            x[i]=b;
+        }
+    }
+    
+    printf("New string : %s",x);
+}
